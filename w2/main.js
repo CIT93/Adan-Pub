@@ -18,6 +18,7 @@ const myHouserecycle = 4;
 // 8. Tally up your annual transportation scores.
 const myHousetransport = 10;
 // 9. Add up your points.
-const cfpTotal = myHousemembers + myHousesize + myHousefood + myHousewater + myHousepurchases + myHousewaste + myHouserecycle + myHousetransport
-// 10. Write 35 to update the rendered html (index.html) with total footprint 
-
+const cfpTotal = myHousemembers + myHousesize + myHousefood + myHousewater + myHousepurchases + myHousewaste + myHouserecycle + myHousetransport;
+// 10. Write to update the rendered HTML (index.html) with total footprint 
+const myHeading = document.querySelector("h2");
+myHeading.textContent = `Your total carbon footprint score is: ${cfpTotal}`;
